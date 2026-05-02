@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProjectFlow RBAC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>ProjectFlow</h1>
+        <p>Projects, tasks, teams and progress tracking with RBAC.</p>
+      </div>
+      <button id="logoutBtn" class="secondary hidden">Logout</button>
+    </header>
+
+    <section id="authSection" class="grid two">
+      <div class="card">
+        <h2>Signup</h2>
+        <input id="signupName" placeholder="Full name" />
+        <input id="signupEmail" placeholder="Email" />
+        <input id="signupPassword" type="password" placeholder="Password min 6 chars" />
+        <button onclick="signup()">Create Account</button>
+      </div>
+      <div class="card">
+        <h2>Login</h2>
+        <input id="loginEmail" placeholder="Email" />
+        <input id="loginPassword" type="password" placeholder="Password" />
+        <button onclick="login()">Login</button>
+      </div>
+    </section>
+
+    <main id="appSection" class="hidden">
+      <div class="dashboard" id="dashboardCards"></div>
+
+      <section class="grid two">
+        <div class="card">
+          <h2>Create Project</h2>
+          <input id="projectName" placeholder="Project name" />
+          <textarea id="projectDescription" placeholder="Description"></textarea>
+          <button onclick="createProject()">Create Project</button>
+        </div>
+
+        <div class="card">
+          <h2>Add Member</h2>
+          <select id="memberProject"></select>
+          <input id="memberEmail" placeholder="Member email, user must be signed up" />
+          <select id="memberRole"><option>Member</option><option>Admin</option></select>
+          <button onclick="addMember()">Add Member</button>
+        </div>
+      </section>
+
+      <section class="grid two">
+        <div class="card">
+          <h2>Create Task</h2>
+          <select id="taskProject" onchange="loadProjectMembers()"></select>
+          <input id="taskTitle" placeholder="Task title" />
+          <textarea id="taskDescription" placeholder="Task description"></textarea>
+          <select id="taskAssignee"></select>
+          <select id="taskPriority"><option>Low</option><option selected>Medium</option><option>High</option></select>
+          <input id="taskDueDate" type="date" />
+          <button onclick="createTask()">Create Task</button>
+        </div>
+
+        <div class="card">
+          <h2>Projects</h2>
+          <div id="projectsList"></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Recent Tasks</h2>
+        <div id="tasksList"></div>
+      </section>
+    </main>
+
+    <div id="toast"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
