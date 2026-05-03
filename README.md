@@ -1,4 +1,4 @@
-# Project Management App - Project Tracker
+# Project Management App - Project Flow
 This is simple, Practical web application to manage projects and tasks with role based access. also this app allows teams to collaborate by creating projects, assigning tasks, and tracking progress in real time.
 
 ---
