@@ -73,20 +73,22 @@ https://projectmanagementapp-production.up.railway.app
 
 ### 🔐 Authentication Page
 
-<img width="1918" height="807" alt="image" src="https://github.com/user-attachments/assets/68ff3c39-9219-4790-a198-d7f3a9be19b6" />
-
+<img width="1909" height="770" alt="image" src="https://github.com/user-attachments/assets/ca30d913-63de-4368-9f8e-7cd0b7159667" />
 
 ### 📊 Dashboard
 
-_Add your screenshot here_
+<img width="1871" height="727" alt="image" src="https://github.com/user-attachments/assets/3108d89e-44c7-4eb8-a5f0-72b816f19ef8" />
+
 
 ### 📁 Project Management
 
-_Add your screenshot here_
+<img width="1563" height="785" alt="image" src="https://github.com/user-attachments/assets/1d3c1831-0b3f-4010-b551-a755ca303bc7" />
+
 
 ### ✅ Task Management
 
-_Add your screenshot here_
+<img width="1287" height="879" alt="image" src="https://github.com/user-attachments/assets/714fe05f-af11-4878-8355-a163bb5d322e" />
+
 
 ---
 
